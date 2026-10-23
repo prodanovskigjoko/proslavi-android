@@ -8,6 +8,7 @@ import androidx.room.RoomDatabase
 @Database(
     entities = [Event::class, Guest::class, Expense::class, ChecklistTask::class, Vendor::class, ScheduleItem::class],
     version = 1,
+    exportSchema = false,
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun dao(): ProslaviDao
